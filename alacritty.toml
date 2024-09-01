@@ -1,0 +1,42 @@
+[font]
+    normal = { family = "Jetbrains Mono NL", style = "bold"}
+    size = 11
+
+[window]
+    padding = { x = 5, y = 5}
+    opacity = 0.5
+    blur = true
+
+[colors]
+    cursor = { text = "#97979b", cursor = "#eff0eb"}
+    selection = { text = "#000000", background = "#fffacd"}
+
+    [colors.primary]
+        foreground = "#eff0eb"
+        background = "#181c27"
+
+    [colors.normal]
+        black = "#A5ADCE"
+        red = "#E78284"
+        green = "#A6D189"
+        yellow = "#E5C890"
+        blue = "#8CAAEE"
+        magenta = "#F4B8E4"
+        cyan = "#81C8BE"
+        white = "#B5BFE2"
+
+    [colors.bright]
+        black = "#A5ADCE"
+        red = "#E78284"
+        green = "#A6D189"
+        yellow = "#E5C890"
+        blue = "#8CAAEE"
+        magenta = "#F4B8E4"
+        cyan = "#81C8BE"
+        white = "#A5ADCE"
+
+[cursor]
+    style = "Underline"
+
+[mouse]
+    hide_when_typing = true
