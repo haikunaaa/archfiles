@@ -1,0 +1,107 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "height": 42,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "network"
+    ],
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "on-click-right": "fullscreen",
+        "icon-theme": "WhiteSur",
+        "icon-size": 25,
+        "tooltip-format": "{title}"
+    },
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "active": "",
+            "urgent": "󰺕"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "memory": {
+        "interval": 5,
+        "format": "󰍛 {}%",
+        "max-length": 10
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
+    },
+    "network": {
+		"interval": 5,
+		"format-wifi": "<span color='#f5e0dc'> </span> {essid}",
+		"format-ethernet": "{ifname}",
+		"format-disconnected": "<span color='#ffffff'>󰖪 </span>",
+		"format-alt": "{ipaddr}/{cidr}",
+		"tooltip": false
+    },
+    "pulseaudio": {
+		"format": "<span color='#f5e0dc'>{icon} </span> {volume}%",
+		"format-bluetooth": "{icon}  {volume}%",
+		"format-muted": "",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": ["", ""]
+		},
+		"scroll-step": 1,
+		"on-click": "pavucontrol",
+		"tooltip": false
+	},
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "<span color='#f5e0dc'>{icon} </span>{percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "tooltip": false
+  },
+	"battery": {
+		"interval": 10,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format-time": "{H}:{M:02}",
+		"format": "<span color='#f5e0dc'>{icon}</span>  {capacity}%",
+		"format-charging": "<span color='#f5e0dc'> </span> {capacity}%",
+		"format-charging-full": "<span color='#f5e0dc'> </span> {capacity}%",
+		"format-full": "{icon}  {capacity}%",
+		"format-alt": "{icon}  {power}W",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"tooltip": false
+	}
+}
